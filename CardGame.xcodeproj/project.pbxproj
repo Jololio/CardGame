@@ -12,6 +12,8 @@
 		551B2A5C1DBFE3D200EE7FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551B2A5A1DBFE3D200EE7FAC /* Main.storyboard */; };
 		551B2A5E1DBFE3D200EE7FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551B2A5D1DBFE3D200EE7FAC /* Assets.xcassets */; };
 		551B2A611DBFE3D200EE7FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551B2A5F1DBFE3D200EE7FAC /* LaunchScreen.storyboard */; };
+		551B2A691DBFE5F100EE7FAC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B2A681DBFE5F100EE7FAC /* Card.swift */; };
+		551B2A6B1DBFE60A00EE7FAC /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B2A6A1DBFE60A00EE7FAC /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		551B2A5D1DBFE3D200EE7FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551B2A601DBFE3D200EE7FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551B2A621DBFE3D200EE7FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551B2A681DBFE5F100EE7FAC /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		551B2A6A1DBFE60A00EE7FAC /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,30 @@
 			children = (
 				551B2A561DBFE3D200EE7FAC /* AppDelegate.swift */,
 				551B2A581DBFE3D200EE7FAC /* ViewController.swift */,
+				551B2A6D1DBFE69F00EE7FAC /* View */,
+				551B2A621DBFE3D200EE7FAC /* Info.plist */,
+				551B2A6C1DBFE66100EE7FAC /* Model */,
+			);
+			path = CardGame;
+			sourceTree = "<group>";
+		};
+		551B2A6C1DBFE66100EE7FAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				551B2A681DBFE5F100EE7FAC /* Card.swift */,
+				551B2A6A1DBFE60A00EE7FAC /* PlayingCard.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		551B2A6D1DBFE69F00EE7FAC /* View */ = {
+			isa = PBXGroup;
+			children = (
 				551B2A5A1DBFE3D200EE7FAC /* Main.storyboard */,
 				551B2A5D1DBFE3D200EE7FAC /* Assets.xcassets */,
 				551B2A5F1DBFE3D200EE7FAC /* LaunchScreen.storyboard */,
-				551B2A621DBFE3D200EE7FAC /* Info.plist */,
 			);
-			path = CardGame;
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				551B2A591DBFE3D200EE7FAC /* ViewController.swift in Sources */,
+				551B2A691DBFE5F100EE7FAC /* Card.swift in Sources */,
+				551B2A6B1DBFE60A00EE7FAC /* PlayingCard.swift in Sources */,
 				551B2A571DBFE3D200EE7FAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
