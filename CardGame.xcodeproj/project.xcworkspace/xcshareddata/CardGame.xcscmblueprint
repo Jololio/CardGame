@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA4BBC57F341D6CDFC23676588AE009EAC7B8960",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA4BBC57F341D6CDFC23676588AE009EAC7B8960" : 0,
+    "74034521061E14D3BE2F51F0F5F80683E8587CE0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2A644663-7A1F-4003-91FD-EDC7624A576B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA4BBC57F341D6CDFC23676588AE009EAC7B8960" : "CardGame\/",
+    "74034521061E14D3BE2F51F0F5F80683E8587CE0" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CardGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CardGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jololio\/Swift-Projects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "74034521061E14D3BE2F51F0F5F80683E8587CE0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jololio\/CardGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA4BBC57F341D6CDFC23676588AE009EAC7B8960"
+    }
+  ]
+}
