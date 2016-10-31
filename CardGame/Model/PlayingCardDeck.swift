@@ -18,7 +18,7 @@ class PlayingCardDeck : Deck
         
         for suit in PlayingCard.validSuits()
         {
-            for var rank = 1; rank < PlayingCard.maxRank(); rank += 1
+            for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
             {
                 //let tempCard = PlayingCard()
                 //tempCard.rank = rank
