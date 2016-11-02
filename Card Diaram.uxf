@@ -83,9 +83,11 @@ bg=yellow</panel_attributes>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
-
+- cards : [Card]
 --
-
++ init()
++ shuffleDeck : Void
++ cutDeck : Void
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -130,5 +132,18 @@ bg=orange</panel_attributes>
 m1=1
 m2=52</panel_attributes>
     <additional_attributes>10.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>140</y>
+      <w>320</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;80.0;300.0;10.0</additional_attributes>
   </element>
 </diagram>
