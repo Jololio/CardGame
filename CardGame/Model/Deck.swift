@@ -22,5 +22,13 @@ class Deck
         
     }
     
+    func drawCard() -> Card!
+    {
+        return nil
+    }
     
+    func drawRandomCa() -> Card!
+    {
+        return nil
+    }
 }

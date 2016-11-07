@@ -88,6 +88,8 @@ bg=yellow</panel_attributes>
 + init()
 + shuffleDeck : Void
 + cutDeck : Void
++ drawCard() : Card!
++ drawRandomCard() : Card!
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -101,7 +103,7 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-cards : [PlayingCard]
+- card : [PlayingCard]
 --
 +init
 +shuffleDeck() : Void
@@ -143,7 +145,7 @@ m2=52</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
-m2=n</panel_attributes>
+m2=0..n</panel_attributes>
     <additional_attributes>10.0;80.0;300.0;10.0</additional_attributes>
   </element>
 </diagram>
