@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -17,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-xc-EDA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-xc-EDA">
                                 <rect key="frame" x="189" y="173" width="225" height="225"/>
-                                <state key="normal" title="Pranked" backgroundImage="GOT EM"/>
+                                <state key="normal" title="Pranked" backgroundImage="cardBack"/>
                                 <variation key="heightClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="188" y="87" width="225" height="225"/>
                                 </variation>
@@ -39,9 +40,26 @@
                                     <rect key="frame" x="288" y="287" width="225" height="225"/>
                                 </variation>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iND-wo-2pf">
+                                <rect key="frame" x="189" y="99" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iND-wo-2pf" firstAttribute="leading" secondItem="b3s-xc-EDA" secondAttribute="leading" id="KzE-7p-YJQ"/>
+                            <constraint firstItem="b3s-xc-EDA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="153" id="aDj-N9-7j1"/>
+                            <constraint firstItem="b3s-xc-EDA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="169" id="dIz-r8-x1a"/>
+                            <constraint firstItem="b3s-xc-EDA" firstAttribute="top" secondItem="iND-wo-2pf" secondAttribute="bottom" constant="53" id="j6N-Zc-gQy"/>
+                            <constraint firstItem="iND-wo-2pf" firstAttribute="width" secondItem="b3s-xc-EDA" secondAttribute="width" id="zdp-O3-znQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="b3s-xc-EDA" id="VcC-Qz-yeS"/>
+                        <outlet property="cardLabel" destination="iND-wo-2pf" id="3Gc-pY-qAT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +67,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GOT EM" width="225" height="225"/>
+        <image name="cardBack" width="225" height="225"/>
     </resources>
 </document>
