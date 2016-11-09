@@ -44,6 +44,11 @@ class PlayingCard : Card
         return suit
     }
     
+    func getCardData() -> String
+    {
+        return "\(PlayingCard.validRanks()[rank]) \(suit)"
+    }
+    
     
     
     override func toString() -> String

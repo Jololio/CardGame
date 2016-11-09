@@ -32,11 +32,12 @@ class CardGameController : UIViewController
      
         if let currentCard = cardDeck.drawCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.rank) \(currentCard.suit)", forState: UIControlState.Normal)
+            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
         }
         else
         {
             cardButton.setTitle("deck over", forState: UIControlState.Normal)
+            cardDeck = PlayingCardDeck()
         }
         
         cardLabel.text = content
