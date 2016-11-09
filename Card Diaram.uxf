@@ -59,6 +59,7 @@ bg=magenta</panel_attributes>
 + init(withRank:Int, ofSuit:String)
 + init() : Initializer
 + toString() : String
++ getCardData() : String
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
@@ -88,8 +89,8 @@ bg=yellow</panel_attributes>
 + init()
 + shuffleDeck : Void
 + cutDeck : Void
-+ drawCard() : Card!
-+ drawRandomCard() : Card!
++ drawCard() : Card?
++ drawRandomCard() : Card?
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -106,7 +107,6 @@ bg=blue</panel_attributes>
 - card : [PlayingCard]
 --
 +init
-+shuffleDeck() : Void
 +orderDeck() : Void
 bg=orange</panel_attributes>
     <additional_attributes/>
