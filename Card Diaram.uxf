@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
+      <x>510</x>
       <y>0</y>
       <w>240</w>
       <h>130</h>
@@ -22,17 +22,15 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
-      <y>20</y>
-      <w>430</w>
-      <h>180</h>
+      <x>1000</x>
+      <y>120</y>
+      <w>280</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Card
 --
--backImage : UIImage
--isFaceUp : Bool
+- isFaceUp : Bool
 --
-+ getBackImage() : UIImage
 + getFacing() : Bool
 + init() : Initializer
 + toString() : String
@@ -42,8 +40,8 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>320</y>
+      <x>910</x>
+      <y>340</y>
       <w>430</w>
       <h>200</h>
     </coordinates>
@@ -66,19 +64,19 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>190</y>
-      <w>30</w>
-      <h>150</h>
+      <x>1060</x>
+      <y>230</y>
+      <w>80</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;60.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>80</x>
-      <y>190</y>
+      <x>590</x>
+      <y>150</y>
       <w>300</w>
       <h>160</h>
     </coordinates>
@@ -97,8 +95,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>410</y>
+      <x>580</x>
+      <y>380</y>
       <w>300</w>
       <h>160</h>
     </coordinates>
@@ -114,38 +112,75 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>340</y>
-      <w>30</w>
-      <h>90</h>
+      <x>700</x>
+      <y>300</y>
+      <w>50</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>30.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>460</y>
-      <w>320</w>
-      <h>40</h>
+      <x>870</x>
+      <y>430</y>
+      <w>60</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=52</panel_attributes>
-    <additional_attributes>10.0;10.0;300.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;40.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
-      <y>140</y>
-      <w>320</w>
-      <h>100</h>
+      <x>880</x>
+      <y>170</y>
+      <w>140</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=0..n</panel_attributes>
-    <additional_attributes>10.0;80.0;300.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;120.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>480</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>View
+--
+bg=white
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>60</y>
+      <w>300</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>CardGame.View::CardView
+--
+frontImage : UIImageView
+backImage : UIImageView
+isFaceUp : Bool
+bottomLabel : UILabel
+topLabel : UILabel
+--
+
+
+bg=pink
+transparency=0</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
