@@ -179,6 +179,7 @@ backImage : UIImageView
 isFaceUp : Bool
 bottomLabel : UILabel
 topLabel : UILabel
+cornerCurve : CGFloat
 --
 
 
