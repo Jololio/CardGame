@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class CardView : UIVIew
+@IBDesignable class CardView : UIView
 {
    
     internal var frontImage : UIImageView
