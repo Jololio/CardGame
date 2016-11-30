@@ -9,13 +9,17 @@
 
 class Card
 {
+    //Declarations
     internal var isFaceUp : Bool
     
+    //Inits
     init()
     {
         isFaceUp = false
     }
     
+    
+    //Returns the card direction (up/down)
     func isFacing() -> Bool
     {
         return isFaceUp

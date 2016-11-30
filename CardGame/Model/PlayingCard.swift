@@ -10,6 +10,7 @@ import UIKit
 
 class PlayingCard : Card
 {
+    //Declarations
     internal var suit : String
     internal var color : UIColor
     internal var rank : Int
@@ -21,6 +22,7 @@ class PlayingCard : Card
         super.init()
     }
     
+    //Inits
     init(withRank: Int, ofSuit:String)
     {
         color = UIColor.redColor()
@@ -29,28 +31,33 @@ class PlayingCard : Card
         super.init()
     }
     
+    //Gets card color
     func getColor() -> UIColor
     {
         return color
     }
     
+    //Gets card rank
     func getRank() -> Int
     {
         return rank
     }
    
+    //Gets card suit
     func getSuit() -> String
     {
         return suit
     }
     
+    //Returns the rank and suit of the card
     func getCardData() -> String
     {
         return "\(PlayingCard.validRanks()[rank]) \(suit)"
     }
     
     
-    
+   
+    //Returns if the card is facing up or down
     override func toString() -> String
     {
         let backStatus : String
@@ -66,6 +73,7 @@ class PlayingCard : Card
         
         
         
+        //Description of card rank/suit/color and if it is facing up/down
         let description = "The card rank is: \(rank) and its suit is \(suit). It has a color of \(color) and \(backStatus)."
         
         return description

@@ -38,6 +38,7 @@ class Deck
         
     }
     
+    //Draws a new card
     func drawCard() -> Card?
     {
         if cards.count > 0
@@ -50,6 +51,7 @@ class Deck
         }
     }
     
+    //Draws a random new card
     func drawRandomCard() -> Card?
     {
         if cards.count > 0
