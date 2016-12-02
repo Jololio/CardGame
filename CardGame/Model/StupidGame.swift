@@ -11,7 +11,7 @@ import Foundation
 class StupidGame
 {
     //Declarations
-    internal var cardDeck : Deck
+    internal var cardDeck : PlayingCardDeck
     internal var hand : [PlayingCard]
     internal var score : Int
     
