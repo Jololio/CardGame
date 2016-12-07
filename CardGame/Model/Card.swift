@@ -25,7 +25,7 @@ class Card
         return isFaceUp
     }
     
-    func setFacing(isFaceUp : Bool)
+    func setFacing(_ isFaceUp : Bool)
     {
         self.isFaceUp = isFaceUp
     }

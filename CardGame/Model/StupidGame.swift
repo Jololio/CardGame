@@ -33,7 +33,7 @@ class StupidGame
     
     
     //Method to Draw a Card from the Deck
-    private func drawCards() -> Void
+    fileprivate func drawCards() -> Void
     {
         hand.append((cardDeck.drawCard() as? PlayingCard)!)
         hand.append((cardDeck.drawCard() as? PlayingCard)!)

@@ -11,8 +11,8 @@ import UIKit
 class CardGameController : UIViewController
 {
     //Declarations
-    private lazy var clickCount = Int()
-    private lazy var cardDeck = PlayingCardDeck()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var cardDeck = PlayingCardDeck()
     
     
    //UI Links
@@ -29,7 +29,7 @@ class CardGameController : UIViewController
     
     //Counts the number of button clicks
     //Grabs a random card and displays it's rank/suit/color etc.
-    @IBAction func cardClick(sender: UIButton)
+    @IBAction func cardClick(_ sender: UIButton)
     {
         clickCount += 1
         
@@ -37,11 +37,11 @@ class CardGameController : UIViewController
      
         if let currentCard = cardDeck.drawCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            cardButton.setTitle("\(currentCard.getCardData())", for: UIControlState())
         }
         else
         {
-            cardButton.setTitle("deck over", forState: UIControlState.Normal)
+            cardButton.setTitle("deck over", for: UIControlState())
             cardDeck = PlayingCardDeck()
         }
         
