@@ -29,7 +29,7 @@ class CardGameController : UIViewController
     
     //Counts the number of button clicks
     //Grabs a random card and displays it's rank/suit/color etc.
-    @IBAction func cardClick(_ sender: UIButton)
+    @IBAction func cardButton(_ sender: UIButton)
     {
         clickCount += 1
         
